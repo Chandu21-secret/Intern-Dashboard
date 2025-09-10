@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="Bonhoeffer Dashboard", layout="wide")
-st.title("🌍 Bonhoeffer Master Data Dashboard")
+st.title("🌍 Bonhoeffer Intern Data Dashboard")
 
 # ✅ CSS Styling
 st.markdown("""
@@ -176,3 +176,4 @@ elif view_mode == "Campaign Conversation":
         st.dataframe(df_convo, use_container_width=True)
     except Exception as e:
         st.error(f"❌ Could not load campaign data: {e}")
+
